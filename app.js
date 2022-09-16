@@ -6,7 +6,7 @@ const block = document.getElementById('lox')
 const block1 = document.getElementById('lox1')
 const tema = document.getElementById('tema')
 if (name) {
-    addText(block, `${name} `)
+    addText2(block, `${name} `)
     addText(block1, 'Лошара ツ')
     addText1(tema, 'Нажми сюда↑')
 } else {
@@ -76,13 +76,25 @@ function addText(node,text,fontSize='70px'){
         node.style.fontSize = fontSize
     }
 }
-function addText1(node,text,fontSize='30px'){
+function addText2(node,text,fontSize='70px'){
     node.textContent = text
     node.style.marginTop = '10px'
     node.style.textAlign ='center'
     node.style.display= 'flex'
     node.style.justifyContent='center'
-    node.style.paddingLeft='200px'
+    node.style.paddingLeft='20px'
+    if(fontSize){
+        node.style.fontSize = fontSize
+    }
+}
+function addText1(node,text,fontSize='36px'){
+    node.textContent = text
+
+    node.style.margin ='0px'
+    node.style.textAlign ='center'
+    node.style.display= 'flex'
+    node.style.justifyContent='center'
+    node.style.paddingLeft='185px'
     node.style.color='black'
     if(fontSize){
         node.style.fontSize = fontSize

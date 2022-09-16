@@ -1,7 +1,7 @@
-@media (max-width: 900px){}
+@media (max-width: 700px){}
 
 html{
-/*     height: 2400px; */
+    height: 2150px;
     background: linear-gradient(to top, FireBrick , BlueViolet );
 }
 .zagolovok{
